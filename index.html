@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <div class="container">
+        <div class="converter-box">
+            <h2>Conversor de Moedas</h2>
+            <input type="number" id="amount" placeholder="Valor" value="">
+
+            <div class="selectors">
+                <select id="fromCurrency"></select>
+                <span> para </span>
+                <select id="toCurrency"></select>
+            </div>
+
+            <button id="convertBtn">Converter</button>
+            <div id="result">---</div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
